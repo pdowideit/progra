@@ -1,5 +1,11 @@
 public class Hilbert {
 
+    /**
+     * Methode malt eine Hilbert Links Kurve mit den &uuml;bergebenen Parametern
+     * @param c ein Canvas auf dem gemalt werden kann
+     * @param ordnung die Ordnung der Hilbert Kurve
+     * @param length die L&auml;nge der einzelnen Linien der Hilbert Kurve
+     */
   static void hilbertLinks(Canvas c, int ordnung, int length) {
       if(ordnung>0) {
           c.rotate(-90);
@@ -15,7 +21,12 @@ public class Hilbert {
           c.rotate(-90);
       }
   }
-
+    /**
+     * Methode malt eine Hilbert Rechts Kurve mit den &uuml;bergebenen Parametern
+     * @param c ein Canvas auf dem gemalt werden kann
+     * @param ordnung die Ordnung der Hilbert Kurve
+     * @param length die L&auml;nge der einzelnen Linien der Hilbert Kurve
+     */
   static void hilbertRechts(Canvas c, int ordnung, int length) {
       if(ordnung>0) {
           c.rotate(90);
@@ -31,7 +42,11 @@ public class Hilbert {
           c.rotate(90);
       }
   }
-  
+
+    /**
+     * Methode um die Implementationen auszuprobieren
+     * @param args Eingaben aus der Konsole als Strings
+     */
   public static void main(String[] args) {
         int ordnung = 6;
         int length = 5;
