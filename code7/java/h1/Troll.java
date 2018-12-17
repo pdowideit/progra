@@ -21,6 +21,7 @@ public class Troll {
             return f.getAverageCruiseAirspeedVelocity() + 2;
         } else if (o instanceof String) {
             if (o.equals("Swallow") || o.equals("Swallow") || o.equals("Swallow") || o.equals("Swallow")) {
+                confused = true;
                 throw new UnspecificQuestionException();
             }
         }
